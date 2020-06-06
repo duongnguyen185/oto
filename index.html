@@ -1,87 +1,336 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Demo</title>
-        <link href="images/computer.png" rel="shortcut icon" />
-    </head>
-    <body>
-        <img src="images/computer.png" alt="DEMO" />
-        <table border="1" width="60%">
-            <thead align="center">
-                <tr >
-                    <th rowspan="2">STT</th>
-                    <th rowspan="2">HỌ TÊN</th>
-                    <th colspan="2">ĐIỂM</th>
-                   
-                </tr>
-                <tr>
-                    
-                    
-                    <td>MÔN 1</td>
-                    <td>MÔN 2</td>
-                </tr>
-            </thead>
-            <tfoot>
-                <tr>
-                    <td colspan="4">abc &copy; 2020</td>
-                </tr>
-            </tfoot>
-            <tr>
-                <td>1</td>
-                <td>NGUYỄN VĂN A</td>
-                <td>10</td>
-                <td>9</td>
-            </tr>
-        </table>
 
-        <table style="border-collapse:collapse" border="1" width="50%" 
-        cellspacing="5" cellpadding="5"
-        bordercolor="red" bgcolor="gold">
-            <tr>
-                <td>STT</td>
-                <td>Họ tên</td>
-                <td>Quê quán</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Nguyễn Văn A</td>
-                <td>TPHCM</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Trần Thị B</td>
-                <td>Đồng Nai</td>
-            </tr>
-            <tr></tr>
-            <tr></tr>
-        </table>
-        <h1><del>HELLO WORLD</del></h1>
-        <h2>HELLO WORLD</h2>
-        <h3>HELLO WORLD</h3>
-        <h4>HELLO WORLD</h4>
-        <h5>HELLO WORLD</h5>
-        <h6>HELLO WORLD</h6>
+<head>
+    <title>Selftaught</title>
 
-        <b>BOLD</b>
-        <i>ITALIC</i>
-        <ins>UNDERLINE</ins>
-        <h1>
-            ax<sup>2</sup> + bx + c = 0
-        </h1>
-        <h1>
-            H<sub>2</sub>SO<sub>4</sub>
-        </h1>
-        <h1>This is first <mark>HTML</mark></h1>
-        <ul type="circle">
-            <li>NGUYỄN VĂN A</li>
-            <li>TRẦN VĂN B</li>
-            <li>NGUYỄN THỊ C</li>
-        </ul>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:300,400,700,900" rel="stylesheet">
 
-        <ol type="A" start="2">
-            <li>NGUYỄN VĂN A</li>
-            <li>TRẦN VĂN B</li>
-            <li>NGUYỄN THỊ C</li>
-        </ol>
-    </body>
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="resources\css\styles.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
+
+
+    <link rel="stylesheet" href="vendors/css/bootstrap.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/js/bootstrap.js"></script>
+    <script src="resources/js/scripts.js"></script>
+
+
+    <!-- ------------------------------------------------------------- -->
+
+
+
+</head>
+
+<body>
+    <div class="gototop" id="gototop">
+        <a href="scripts:;" onclick="goToTop()">VỀ ĐẦU TRANG</a>
+    </div>
+    <header id="home">
+
+        <nav>
+            <a href="#home"><img src="./resources/img/logo.png" alt="logo" class="logo"></a>
+            <ul class="main-nav">
+                <li><a href="#testimonials">How clients think</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fas fa-bars mobile-nav-icon"></i>
+        </nav>
+
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="heading-main-box">
+                <h1>We will study <br>English together.<br> So join with us.
+                </h1>
+                <a href="#" class="btn" data-toggle="modal" data-target="#myModal">Tell me more</a>
+                <a href="#" class="btn" data-toggle="modal" data-target="#myModal">Join us</a>
+            </div>
+        </div>
+    </header>
+    <section class="about-section" id="about">
+        <div class="row">
+            <h2>About Us</h2>
+            <p class="p-long">
+                We are people that are studying English by ourselves, we believe that you don’t need to pay so much money for being good at English, we’re here to help you.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4 about-picture">
+                <img src="./resources/img/activities1.jpeg" alt="img">
+                <p class="picture-title">
+                    Team working
+                </p>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <img src="./resources/img/activities2.jpeg" alt="activies1">
+                <p class="picture-title">
+                    Funny class
+                </p>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <img src="./resources/img/activities3.jpeg" alt="activies1">
+                <p class="picture-title">
+                    Be confident
+                </p>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <img src="./resources/img/activities4.jpeg" alt="activies1">
+                <p class="picture-title">
+                    All our friends
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="product-section" id="product">
+        <h2>Product</h2>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <h3>Pronunciation class</h3>
+                    <p class="product-price">19$ <span>/per month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check small-icon"></i>native voices </li>
+                        <li><i class="fas fa-check small-icon"></i>master IPA</li>
+                    </ul>
+                    <a href="#" class="btn" data-toggle="modal" data-target="#myModal">JOIN US</a>
+                </div>
+            </div>
+
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <h3>Speaking class</h3>
+                    <p class="product-price">25$ <span>/per month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check small-icon"></i>native speaking </li>
+                        <li><i class="fas fa-check small-icon"></i>speaking naturally</li>
+                    </ul>
+                    <a href="#" class="btn" data-toggle="modal" data-target="#myModal">JOIN US</a>
+                </div>
+            </div>
+
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <h3> Listening class</h3>
+                    <p class="product-price">25$ <span>/per month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check small-icon"></i>native speech</li>
+                        <li><i class="fas fa-check small-icon"></i>hearing English clearly</li>
+                    </ul>
+                    <a href="#" class="btn" data-toggle="modal" data-target="#myModal">JOIN US</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    The course is very helpful, I can speak English fluently and I think The SF English became my second family, I love everyone very much. Thank you.
+                    <cite>
+                     <img src="resources/img/person5.jpeg" alt="person5">   Nguyen Chem Gio
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    I want to thank to SF English, they changed my life forever, I can’t believe that I can speak fluently English, Thank you again.
+                    <cite>
+                     <img src="resources/img/person3.jpeg" alt="person1">  Vu Thi Tang Boc
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    I believe that who came to This English centre would love this place as I did, when the course finished, I feel sad because studying in that place I always felt funny.
+                    <cite>
+                     <img src="resources/img/person4.jpeg" alt="person4"> Tran Vo Van
+                    </cite>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Trust me, you can master English just by joining this class, I did, so I believe that you can too. Hope that one day, you can come and join in this class.
+                    <cite>
+                     <img src="resources/img/person6.jpg" alt="person6"> Le Du Do
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    All the members of this centre are my friends, I feel like I come home when going to this place for studying English, you will feel like me if you join in.
+                    <cite>
+                     <img src="resources/img/person1.jpeg" alt="person1"> Le Thi That Long
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Let’s start learning English easily by joining to SF English, you can see many friends there, see some incredible teachers, and met my lover there.
+                    <cite>
+                     <img src="resources/img/person2.jpeg" alt="person2"> Nguyen So Huong
+                    </cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <section class="sponsors-section" id="sponsors">
+        <h2>Sponsors</h2>
+        <div class="row">
+            <ul class="sponsors-showcase clearfix">
+                <li>
+                    <figure>
+                        <img class="logo-sponsor" src="resources/img/barcelona_logo.png" alt="img">
+                        <figcaption>
+                            Barcelona
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class="logo-sponsor" src="resources/img/mctcity_logo.png" alt="mct">
+                        <figcaption>
+                            Manchester city
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class="logo-sponsor" src="resources/img/juventus_logo.png" alt="barcelona_logo">
+                        <figcaption>
+                            Juventus
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <ul class="sponsors-showcase clearfix">
+                <li>
+                    <figure>
+                        <img class="logo-sponsor" src="resources/img/mctunited_logo.png" alt="barcelona_logo">
+                        <figcaption>
+                            Manchester United
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class="logo-sponsor" src="resources/img/tottenham_logo.png" alt="mct">
+                        <figcaption>
+                            Tottenham
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class="logo-sponsor" src="resources/img/bayern_logo.png" alt="barcelona_logo">
+                        <figcaption>
+                            Bayern Munich
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <h2>CONTACT</h2>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <ul class="information">
+                    <li><i class="fas fa-map-marker-alt small-icon"></i> Address: 21A, SelfTaught street, Ha Noi </li>
+                    <li><i class="fas fa-envelope small-icon"></i> Email: selftaughtteam@edu.com </li>
+                    <li><i class="fas fa-phone small-icon"></i> SĐT: (+084 )099-923-232-320</li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="col span-2-of-3">
+                <form>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" placeholder="your name...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" placeholder="your email...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Message</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea placeholder="your message..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" class="btn" value="Send It">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2020 by ABCXYZ</p>
+    </footer>
+
+
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h2 class="modal-title">CONTACT US</h2>
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="txtEmail">Name</label>
+                        <input type="email" id="txtEmail" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="txtSubject">Title</label>
+                        <input type="text" id="txtSubject" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="txtDes">Message</label>
+                        <textarea class="form-control" id="txtDes"></textarea>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-info">SEND</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">CLOSE</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
